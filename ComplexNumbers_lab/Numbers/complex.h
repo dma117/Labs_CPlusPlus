@@ -5,12 +5,9 @@ class Complex {
 public:
 	Complex(const Rational&);
 	Complex(const Rational&, const Rational&);
-	Complex(int);
-	Complex(int, int);
-	Complex(int64_t);
-	Complex(int64_t, int64_t);
-	Complex(double);
-	Complex(double, double);
+	Complex(int real, int imaginary = 0);
+	Complex(int64_t real, int64_t imaginary = 0);
+	Complex(double real, double imaginary = 0);
 
 	Rational GetRealPart() const;
 	Rational GetImaginaryPart() const;

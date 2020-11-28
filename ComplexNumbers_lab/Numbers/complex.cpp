@@ -8,18 +8,12 @@ Complex::Complex(const Rational& real, const Rational& imaginary) {
     img_ = imaginary;
 }
 
-Complex::Complex(int real) : Complex((int64_t)real) { }
-
-Complex::Complex(int real, int img) : Complex((int64_t)real, (int64_t)img) { }
-
-Complex::Complex(int64_t num) : Complex(num, (int64_t)0) { }
+Complex::Complex(int real, int imaginary) : Complex((int64_t)real, (int64_t)imaginary) { }
 
 Complex::Complex(int64_t real, int64_t imaginary) {
     r_ = real;
     img_ = imaginary; 
 }
-
-Complex::Complex(double real) : Complex(real, (double)0) { }
 
 Complex::Complex(double real, double imaginary) {
     r_ = real;
